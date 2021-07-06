@@ -58,6 +58,16 @@ void vendor_load_properties()
 
         if (offset != std::string::npos) {
             std::string model = str.substr(offset + strlen("Model: "), 5);
+
+            if (model == "G3112" || model == "G3116")
+            {
+                property_set("persist.radio.multisim.config", "dsds");
+            }
+            else
+            {
+                property_set("persist.radio.multisim.config", "ss");
+            }
+
             property_override("ro.product.device", model.c_str());
             property_override("ro.product.model", model.c_str());
             property_override("ro.product.name", model.c_str());
