@@ -1,2 +1,8 @@
 # Display
 ro.sf.lcd_density=320
+
+# SEMC
+ro.semc.ms_type_id=PM-1003-BV
+ro.semc.version.fs=GENERIC
+ro.semc.product.name=Xperia XA1
+ro.semc.product.device=G31
